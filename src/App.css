@@ -18,13 +18,14 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .card{
   width: 100%;
   height: 100vh;
   border: 1px solid black;
   padding: 1rem;
-  background-image: url("/public/pexels-till-daling-12538152.jpg");
+  background-image: url("https://images.pexels.com/photos/12538152/pexels-photo-12538152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,12 +33,22 @@ body{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  max-width: 1000px;
-color: white;
+  max-width: 500px;
+  color: white;
+  position: relative;
 }
+.content{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .tittle{
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
 }
 .img-weather{
   width: 100px;
@@ -95,12 +106,15 @@ color: white;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   max-width: 500px;
-  position: absolute;
-  bottom: 100px;
 }
 .details{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 550px) {
+  .card{
+    height: 700px;
+  }
 }

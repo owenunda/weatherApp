@@ -29,7 +29,9 @@ console.log(weather)
 	return (
 	<div className="App">
 		<div className='card'>
-			<h1	className='tittle'>Wheather app</h1>
+		<h1	className='tittle'>Wheather app</h1>
+			<div className='content'>
+			
 				<div className='card-imgInfo'>
 					<p> { weather.name }, {weather.sys?.country} </p>
 					<h1> {isunit ? weather.main?.temp : Math.floor((weather.main?.temp * 9/5) + 32)} <sup>{isunit ? "°C" : "°F"}</sup> </h1>
@@ -53,6 +55,7 @@ console.log(weather)
 					</div>
 				</div>
 			<button className='btn' onClick={convert} > <i class="fa-solid fa-screwdriver-wrench"></i> convet temp to {isunit ? "°F" : "°C"} </button>
+			</div>
 		</div>
 	</div>
 	)
