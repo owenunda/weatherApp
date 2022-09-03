@@ -1,14 +1,16 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense, lazy } from 'react'
 import './App.css'
-
-import WeatherApp from './assets/components/WeatherApp'
+import Loader from './assets/components/Loader'
+const WeatherApp = lazy(() => import("./assets/components/WeatherApp"))
 function App() {
-
 
 
 	return (
 	<div className="App">
+		
+		<Suspense fallback={<Loader/>}>
 		<WeatherApp/>
+		</Suspense>
 	</div>
 	)
 }
