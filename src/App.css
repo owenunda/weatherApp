@@ -68,6 +68,7 @@ body{
   font-size: 4rem;
   font-weight: 100;
 }
+
 .description{
   width: 100%;
   display: flex;
@@ -81,6 +82,7 @@ body{
   font-size: 1.5rem;
 }
 .description img{
+  animation: animateIcon 3s infinite;
   width: 65px;
 }
 
@@ -174,5 +176,18 @@ color: white;
 
   100% {
     transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+@keyframes animateIcon {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(25px);
+
+  }
+  100%{
+    transform: translateY(0px);
+
   }
 }
