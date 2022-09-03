@@ -16,7 +16,7 @@ const WeatherApp = () => {
 			
 				<div className='card-imgInfo'>
 					<p> { weather.name }, {weather.sys?.country} </p>
-					<h1> {isunit ? weather.main?.temp : Math.floor((weather.main?.temp * 9/5) + 32)} <sup>{isunit ? "°C" : "°F"}</sup> </h1>
+					<h1> {isunit ? weather.main?.temp : Math.floor((weather.main?.temp * 9/5) + 32)}<sup>{isunit ? "°C" : "°F"}</sup> </h1>
 				</div>
 				<div className='description'>
 					<p>  "{weather.weather?.[0].description}" </p>
